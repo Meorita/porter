@@ -3,55 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WIP Landing Page</title>
+    <title>Sclera.dev - Focus Your AI</title>
     <style>
-        body, html {
-            height: 100%;
+        * {
+            box-sizing: border-box;
             margin: 0;
-            font-family: 'Futura', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
+            padding: 0;
         }
 
-        .container {
-            max-width: 600px;
+        body, html {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray for the base background */
+            color: #333;
+            line-height: 1.6;
             padding: 20px;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin: 0 0 20px 0;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
 
-        p {
+        .hero {
+            background-color: #ffffff; /* Kept components bright for contrast */
+            margin-bottom: 20px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2c3e50; /* Slightly darker for better readability */
+        }
+
+        .hero p {
             font-size: 1.2rem;
-            margin: 10px 0;
+            max-width: 800px;
+            color: #4a4a4a; /* Softened text color */
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+        .feature {
+            background: #ffffff; /* Component backgrounds remain light for clarity */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .feature img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .feature h2 {
+            color: #333; /* Maintaining readability with a consistent font color */
+        }
+
+        .feature p {
+            color: #4a4a4a; /* Again, a softer shade for body text */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333; /* Dark footer for contrast */
+            color: #ffffff;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hero {
+                height: auto;
             }
 
-            p {
-                font-size: 1rem;
+            .feature {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sclera.dev</h1>
-        <p>Page is under construction. Stay tuned.</p>
-        <p>Need to get in touch? Email us at <a href="mailto:mofuumofuu@proton.me">mofuumofuu@proton.me</a></p>
+
+<div class="container hero">
+    <h1>Sclera.dev: Precision Focus for AI</h1>
+    <p>At Sclera.dev, we harness the power of Language Learning Models (LLMs) to zero in on specific business challenges. Just as the sclera directs the eye with precision, our platform focuses AI capabilities to provide bespoke solutions for your unique business needs.</p>
+</div>
+
+<div class="container">
+    <div class="feature">
+        <img src="https://via.placeholder.com/150" alt="Custom Solutions">
+        <div>
+            <h2>Custom AI Solutions</h2>
+            <p>Discover how Sclera.dev tailors AI insights to address your industry-specific challenges, driving efficiency and innovation.</p>
+        </div>
     </div>
-    <script>
-        // Just a placeholder if you need some basic interactivity
-        console.log("Page loaded. Ready for further instructions.");
-    </script>
+
+    <div class="feature">
+        <img src="https://via.placeholder.com/150" alt="Integration">
+        <div>
+            <h2>Seamless Integration</h2>
+            <p>Easily incorporate our focused LLM outputs into your existing workflows, enhancing decision-making and strategic planning.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <img src="https://via.placeholder.com/150" alt="Expert Support">
+        <div>
+            <h2>Expert Guidance</h2>
+            <p>Lean on our team of AI specialists to guide you through the implementation process, ensuring you leverage the full potential of targeted AI.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © 2024 Sclera.dev. Empowering businesses with focused AI.
+</div>
+
 </body>
 </html>
